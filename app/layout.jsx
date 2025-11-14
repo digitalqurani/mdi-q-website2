@@ -1,17 +1,20 @@
-import "../styles/globals.css"
-import Nav from "../components/Nav"
-import Footer from "../components/Footer"
+import "../styles/globals.css";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Madrasah Diniyah IT & Qur'an (MDIQ)",
   description:
     "Belajar Qur'an, IT & Ilmu Diniyah untuk Semua Usia — Anak, Remaja, hingga Orang Tua.",
+  metadataBase: new URL("https://bimbeldi.mdiq.biz.id"),
   openGraph: {
     title: "MDIQ - Madrasah Diniyah IT & Qur'an",
     description: "Belajar Qur'an, IT & Ilmu Diniyah untuk Semua Usia",
-    url: "https://bimbeldi.mdiq.biz.id",
+    url: "/",
+    siteName: "MDIQ",
+    type: "website",
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -22,5 +25,5 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
-  )
+  );
 }
